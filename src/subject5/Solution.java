@@ -28,6 +28,21 @@ public class Solution {
         int indexOld = str.length() - 1;
         int indexNew = str.length() + spaceNum*2 - 1;
 
+        //设置str新的长度
+        str.setLength(indexNew + 1);
+
+        while(indexNew >= 0){
+            if(str.charAt(indexOld) == ' '){//如果indexOld指针指向了空格
+                str.setCharAt(indexNew--, '0');
+                str.setCharAt(indexNew--, '2');
+                str.setCharAt(indexNew--, '%');
+            }else{//如果indexOld指向的不是空格
+                str.setCharAt(indexNew, str.charAt(indexOld));
+                indexNew--;
+            }
+            indexOld--;
+        }
+
         return str.toString();
     }
 }
