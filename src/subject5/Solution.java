@@ -1,4 +1,7 @@
 package subject5;
+
+import java.util.Scanner;
+
 /*
 * 题目描述：
 * 请实现一个函数，将一个字符串中的每个空格替换成“%20”。
@@ -11,7 +14,15 @@ package subject5;
 * */
 public class Solution {
 
-    public String replaceSpace(StringBuffer str){
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        StringBuffer str = new StringBuffer(s);
+        String res = replaceSpace(str);
+        System.out.println(res);
+    }
+
+    public static String replaceSpace(StringBuffer str){
         if(str == null){
             return null;
         }
