@@ -1,3 +1,4 @@
+package Singleton;
 /*
 * 单例模式：静态内部类实现
 * */
