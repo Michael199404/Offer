@@ -14,7 +14,7 @@ package subject10;
 *
 * 我们从最小的那个数开始计算，用a和b保存前两项的结果，直接用a+b得出下一个数的结果
 * */
-public class Solution {
+public class Solution1 {
     public int Fibonacci(int n) {
         if(n <= 0)
             return 0;
