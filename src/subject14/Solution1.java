@@ -5,6 +5,8 @@ package subject14;
 * 题目描述：
 * 给你一根长度为n的绳子，请把绳子剪成m段（m，n都是大于1 的整数）。每段绳子长度的可能最大乘积是多少。
 *
+* 子问题的最优解存储在result数组中，数组第i个元素表示把长度为i的绳子剪成
+* 若干段之后各段长度乘积的最大值，即f(i)
 * http://www.manongjc.com/article/37973.html
 * */
 public class Solution1 {
