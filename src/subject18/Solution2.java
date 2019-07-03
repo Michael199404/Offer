@@ -8,7 +8,27 @@ package subject18;
 * 3.
 * */
 public class Solution2 {
-    public ListNode deleteDuplication(ListNode pHead){
+
+    public static void main(String[] args) {
+        ListNode a = new ListNode(1);
+        ListNode b = new ListNode(2);
+        ListNode c = new ListNode(2);
+        ListNode d = new ListNode(2);
+        ListNode e = new ListNode(3);
+        ListNode f = new ListNode(4);
+        a.next = b;
+        b.next = c;
+        c.next = d;
+        d.next = e;
+        e.next = f;
+        ListNode res = deleteDuplication(a);
+        while(res != null){
+            System.out.println(res.val);
+            res = res.next;
+        }
+    }
+
+    public static ListNode deleteDuplication(ListNode pHead){
         if(pHead == null || pHead.next ==null)
             return pHead;
 
@@ -45,4 +65,6 @@ public class Solution2 {
         }
         return pHead;
     }
-}
+
+    }
+
