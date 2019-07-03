@@ -15,11 +15,6 @@ import java.sql.SQLOutput;
 * */
 public class Solution2 {
 
-    //测试
-    public static void main(String[] args) {
-        print1ToMaxOfDigits(4);
-    }
-
     public static void print1ToMaxOfDigits(int n){
         if(n <= 0)
             return;
