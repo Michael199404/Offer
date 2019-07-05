@@ -24,6 +24,9 @@ public class Solution1 {
                 return new int[]{i, map.get(complement)};
             }
         }
+        StringBuilder sb = new StringBuilder();
+        sb.append("a");
+        sb.append("b");
         return null;
     }
 }
